@@ -1,13 +1,30 @@
-# [Mean-Field Multi-Agent Contextual Bandit for Energy-Efficient Resource Allocation in vRANs](#description)
+# Research Papers Overview
 
-## Abstract
-The paper addresses the high energy consumption of hardware accelerators (HAs) in virtualized RANs (vRANs). It proposes ECORAN, a multi-agent contextual bandit algorithm that uses mean field theory for scalable and energy-efficient resource allocation. Experiments show ECORAN can achieve up to 40% energy savings while maintaining reliability.
+## Table of Contents
+1. **[Mean-Field Multi-Agent Contextual Bandit for Energy-Efficient Resource Allocation in vRANs](#mean-field-multi-agent-contextual-bandit-for-energy-efficient-resource-allocation-in-vrans)**
+2. **[Intent-Aware Radio Resource Scheduling in a RAN Slicing Scenario Using Reinforcement Learning](#intent-aware-radio-resource-scheduling-in-a-ran-slicing-scenario-using-reinforcement-learning)**
 
-## Aim
-The aim is to develop an energy-efficient strategy for resource allocation in vRANs by optimizing the use of HAs and CPUs, thereby reducing energy consumption and maintaining reliability.
+## Details
 
-## Shortcomings
-The primary shortcoming is the complexity and unpredictability of balancing workloads between HAs and CPUs in real-time, especially with varying traffic loads and the need for scalability with a large number of base stations.
+### Mean-Field Multi-Agent Contextual Bandit for Energy-Efficient Resource Allocation in vRANs
+**Abstract:**
+The paper presents a mean-field multi-agent contextual bandit approach for energy-efficient resource allocation in virtualized Radio Access Networks (vRANs). By leveraging mean-field theory and multi-agent systems, the proposed method aims to optimize energy usage while ensuring efficient resource distribution among multiple agents in a vRAN environment.
 
-## [Description](#)
-This paper discusses Radio Access Network (RAN) virtualization, key for new-generation mobile networks, which requires hardware accelerators (HAs) to process wireless signals from base stations (BSs) to meet stringent reliability targets. However, HAs are expensive and energy-hungry. To address this problem, data from an experimental platform is gathered, comparing the performance and energy consumption of a HA (NVIDIA GPU V100) versus a CPU (Intel Xeon Gold 6240R, 16 cores) for energy-friendly software processing. Based on these insights, a strategy to offload workloads to HAs opportunistically is devised, aiming to save energy while preserving reliability. This strategy must be configured in near-real-time for every BS sharing common computational resources, presenting a challenging multi-agent collaborative problem with a potentially large and variable number of agents (BSs). Therefore, an efficient multi-agent contextual bandit algorithm called ECORAN is proposed, applying concepts from mean field theory to ensure scalability. Using a real platform and traces from a production mobile network, ECORAN is shown to provide up to 40% energy savings compared to current industry approaches.
+**Aim:**
+The primary aim is to develop a scalable and efficient resource allocation algorithm that reduces energy consumption in vRANs, enhancing overall network performance and sustainability.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Intent-Aware Radio Resource Scheduling in a RAN Slicing Scenario Using Reinforcement Learning
+**Abstract:**
+Network slicing in the radio access network (RAN) domain, known as RAN slicing, demands elasticity, efficient resource sharing, and customization. This paper introduces an intent-aware reinforcement learning method for radio resource scheduling (RRS) in a RAN slicing scenario. The proposed method aims to prevent intent faults by managing radio resources among slices, ensuring fulfillment of slice quality of service (QoS) intents.
+
+**Aim:**
+The goal is to enhance the RRS function in RAN slicing by using reinforcement learning to fulfill QoS intents described in service-level agreements (SLAs). The method is evaluated under various network conditions to ensure it outperforms existing baselines.
+
+**Shortcomings:**
+- The approach may encounter difficulties in scenarios with highly dynamic network conditions and varying QoS requirements.
+- The reinforcement learning method might have high sample complexity and sensitivity to hyperparameters.
+- Stability and convergence issues could arise when dealing with continuous state and action spaces.
+
+**[⬆ Back to Top](#table-of-contents)**

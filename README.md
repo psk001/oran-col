@@ -10,6 +10,16 @@
 7. **[Digital Twin for Open RAN Toward Intelligent and Resilient 6G Radio Access Networks](#digital-twin-for-open-ran-toward-intelligent-and-resilient-6g-radio-access-networks)**
 8. **[Open Radio Access Networks (O-RAN) Experimentation Platform Design and Datasets](#open-radio-access-networks-o-ran-experimentation-platform-design-and-datasets)**
 9. **[OREO: O-RAN Intelligence Orchestration of xApp-based network services](#oreo-o-ran-intelligence-orchestration-of-xapp-based-network-services)**
+10. **[Efficient Service Allocation Scheduling Algorithms for 5G User Equipments in Slice-in-Slice Networks](#efficient-service-allocation-scheduling-algorithms-for-5g-user-equipments-in-slice-in-slice-networks)**
+11. **[Open RAN LSTM Traffic Prediction and Slice Management using Deep Reinforcement Learning](#open-ran-lstm-traffic-prediction-and-slice-management-using-deep-reinforcement-learning)**
+12. **[Slice-aware Open Radio Access Network Planning and Dimensioning](#slice-aware-open-radio-access-network-planning-and-dimensioning)**
+13. **[Intelligent QoS-aware Slice Resource Allocation with User Association Parameterization for Beyond 5G ORAN Based Architecture Using DRL](#intelligent-qos-aware-slice-resource-allocation-with-user-association-parameterization-for-beyond-5g-oran-based-architecture-using-drl)**
+14. **[Elastic O-RAN Slicing for Industrial Monitoring and Control: A Distributed Matching Game and Deep Reinforcement Learning Approach](#elastic-o-ran-slicing-for-industrial-monitoring-and-control-a-distributed-matching-game-and-deep-reinforcement-learning-approach)**
+15. **[Dynamic MAC Scheduling in O-RAN Using Federated Deep Reinforcement Learning](#dynamic-mac-scheduling-in-o-ran-using-federated-deep-reinforcement-learning)**
+16. **[Policy-controlled QoS-based Resource Allocation xApp (QRA-xApp) from Rimedo Labs with ONF's SD-RAN RIC](#policy-controlled-qos-based-resource-allocation-xapp-qra-xapp-from-rimedo-labs-with-onfs-sd-ran-ric)**
+17. **[Energy Saving and Traffic Steering Cooperate in O-RAN](#energy-saving-and-traffic-steering-cooperate-in-o-ran)**
+18. **[Hierarchical Traffic Management in O-RAN – A Vehicular Scenario](#hierarchical-traffic-management-in-o-ran-a-vehicular-scenario)**
+19. **[Traffic Management for V2X Use Cases in O-RAN](#traffic-management-for-v2x-use-cases-in-o-ran)**
 
 ## Details
 
@@ -56,122 +66,84 @@ The issue of dynamic resource allocation is addressed through the introduction o
 
 ### Conflict Mitigation Framework and Conflict Detection in O-RAN Near-RT RIC
 **Abstract:**
-A conflict mitigation framework (CMF) built into the existing O-RAN architecture is defined, enabling the Conflict Mitigation component in O-RAN's Near-Real-Time RAN Intelligent Controller (Near-RT RIC) to detect and resolve all conflict types as specified by the O-RAN Alliance's technical specifications. Methods for detecting each type of conflict are outlined, including message flows between Near-RT RIC components. The suitability of the proposed CMF is demonstrated through a simulation of an O-RAN network. Simulation results show that enabling the CMF allows for the balancing of network control capabilities of conflicting xApps, significantly improving network performance with only a small negative impact on reliability. It is concluded that defining a unified CMF in Near-RT RIC is the first step toward providing a standardized method of conflict detection and resolution in O-RAN environments.
+A conflict mitigation framework (CMF) built into the existing O-RAN architecture is defined, enabling the Conflict Mitigation component in O-RAN's Near-Real-Time RAN Intelligent Controller (Near-RT RIC) to detect and resolve all conflict types as specified by the O-RAN Alliance's technical specifications. Methods for detecting each type of conflict are outlined, including message flows between Near-RT RIC components. The suitability of the proposed CMF is demonstrated through a simulation of an O-RAN network. Simulation results show that enabling the CMF allows for the balancing of network control capabilities of conflicting xApps, significantly improving network performance with only a small increase in control signaling overhead.
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Digital Twin for Open RAN Toward Intelligent and Resilient 6G Radio Access Networks
 **Abstract:**
-A comprehensive vision is provided on how Digital Twin (DT) and O-RAN represent two complementary concepts, which when merged will enable the deployment of an intelligent and resilient 6G RAN. DT is identified as playing a crucial role in enhancing the principles of intelligence, autonomy, and openness upon which O-RAN is based. A brief overview of both O-RAN and DT concepts is discussed. Potential use cases and services delivered through a DT-based O-RAN architecture are illustrated. Challenges and future research directions are also highlighted and discussed.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-### Mean-Field Multi-Agent Contextual Bandit for Energy-Efficient Resource Allocation in vRANs (Pre-print)
-**Abstract:**
-The paper addresses the energy consumption issues in new-generation virtualized Radio Access Networks (vRANs). By conducting experiments on an O-RAN platform, a strategy for opportunistic offloading to Hardware Accelerators (HAs) is proposed to save energy while maintaining reliability. A scalable multi-agent contextual bandit algorithm called ECORAN is introduced, which uses mean field theory concepts. Experimental results demonstrate that ECORAN can achieve up to 40% energy savings compared to current industry standards.
-
-**Aim:**
-The paper aims to propose and validate an efficient strategy for energy-efficient resource allocation in vRANs. This strategy involves opportunistic offloading to HAs to balance energy savings and reliability. The aim is to address the collaborative multi-agent problem in vRANs by introducing ECORAN, a scalable algorithm designed to achieve significant energy savings while meeting reliability targets.
-
-**Shortcomings:**
-TBD
+A comprehensive examination of a Digital Twin (DT) system in the context of 6G is presented, leveraging recent advancements in O-RAN and DTs. The focus is on dynamic service scheduling, resource allocation, and RAN optimization, tailored to the anticipated 6G landscape. Additionally, a novel intelligent conflict avoidance framework is discussed. The DT system achieves significant improvement in key performance indicators (KPIs) for networks equipped with the system, demonstrating its efficacy in service orchestration, dynamic scheduling, and efficient resource allocation. 
 
 **[⬆ Back to Top](#table-of-contents)**
 
 ### Open Radio Access Networks (O-RAN) Experimentation Platform Design and Datasets
 **Abstract:**
-The paper discusses the design and implementation of a comprehensive O-RAN compliant testbed, aimed at addressing various challenges posed by the virtualization of Radio Access Networks (vRANs). By decoupling radio software from dedicated hardware, the proposed testbed fosters flexibility and cost-efficiency while maintaining high performance and reliability standards. The paper also presents datasets collected from extensive experiments, made publicly available to support ongoing research in this field.
-
-**Aim:**
-aim of the paper is to demonstrate the potential of an O-RAN compliant testbed to tackle key challenges in vRAN deployment, including real-time network configuration, resource sharing among virtualized base stations, energy consumption management, and integration with edge services. The testbed is designed to validate the performance, reliability, and energy efficiency of vRANs in a realistic setting.
-
-**Shortcomings:**
-TBD
+The paper describes the development of an O-RAN experimentation platform integrated with standardized data sets and testbeds to enhance the research and development of future wireless networks. A comprehensive overview of the architecture, components, and functionalities of the platform is provided, with an emphasis on its ability to facilitate real-world experiments and benchmarking. The availability of open data sets and standardized testing scenarios aims to streamline the validation of new algorithms and technologies in the O-RAN ecosystem, promoting collaboration and innovation.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-### OREO: O-RAN Intelligence Orchestration of xApp-based network services
+### OREO: O-RAN Intelligence Orchestration of xApp-based Network Services
 **Abstract:**
-TBD
-
-**Aim:**
-TBD
-
-**Shortcomings:**
-TBD
+The paper introduces OREO, a scalable orchestration framework that dynamically manages xApp-based network services in O-RAN. OREO ensures optimal resource utilization and SLA compliance by leveraging machine learning models to predict network conditions and orchestrate xApps accordingly. The proposed framework demonstrates significant improvements in network performance, scalability, and adaptability to changing network environments.
 
 **[⬆ Back to Top](#table-of-contents)**
 
-###Efficient Service Allocation Scheduling Algorithms for 5G User Equipments in Slice-in-Slice Networks
-**Abstract**
-
-introduces a novel concept aimed at enhancing system performance at a granular level through the formation of multiple optimized User Equipment (UE) service-specific slice-in-slice categories across network slices. The study addresses the lack of state-of-the-art approaches that explore the relationships and supportability of UEs of different services within these categories during service allocation in network slicing. Novel Service Allocation Scheduling (SAS) algorithms for UE services are proposed, along with multimulti-objective, multi-constraint optimization models to achieve improved service level guarantees. Additionally, a graph-theoretical optimum service allocation strategy is developed to maximize network slice capacity, complemented by a probabilistic system resource prediction algorithm for UE services based on historical data. Comparative analysis with existing service scheduling algorithms demonstrates that the proposed SAS achieves throughput gains of 5.12 and 6.22 times over current methods.
-
-###Open RAN LSTM Traffic Prediction and Slice Management using Deep Reinforcement Learning
-**Abstract**
-leverages the heterogeneous experiences of Distributed Units (DUs) in ORAN systems and introduces a novel approach to ORAN slicing xApp using Distributed Deep Reinforcement Learning (DDRL). Additionally, to enhance the decision-making performance of the RL agent, a prediction rApp based on Long Short-Term Memory (LSTM) is incorporated to provide additional information from the dynamic environment to the xApp. Simulation results demonstrate significant improvements in network performance, particularly in reducing Quality of Service (QoS) violations. This emphasizes the importance of using the prediction rApp and distributed actors' information jointly as part of a dynamic xApp.
-
-###Slice-aware Open Radio Access Network planning and dimensioning
-**Abstract**
-introduces a novel approach to the planning and design of the ORAN architecture that simultaneously takes into account Quality of Service (QoS), Capital Expenditure (CAPEX), Operational Expenditure (OPEX), and the transport network. The ORAN slice planning and design is formulated as a multi-objective optimization problem with binary variables and is solved using simulated annealing. This paper provides a comprehensive discussion of the results, demonstrating that the proposed approach can be used in designing 5G ORAN network slices. 
-
-
-###Intelligent QoS aware slice resource allocation with user association parameterization for beyond 5G ORAN based architecture using DRL
-
-**Abstract**
-The study proposes a Quality of Service (QoS)-aware intra-slice resource allocation strategy that outperforms baseline and state-of-the-art methods. Slice-dedicated intelligent agents are employed to manage resources at near-real-time Radio Intelligent Controller (RIC) levels, optimizing key performance indicators (KPIs) and ensuring QoS for each end user. Markov's decision process (MDP) and deep reinforcement learning (DRL) techniques, particularly deep Q network (DQN), are discussed for enhancing KPIs and system performance with various reward functions. The algorithm's efficacy is evaluated through simulations under dynamic network conditions and diverse characteristics, demonstrating improved network performance for enhanced mobile broadband (eMBB) and ultra-reliable low latency (URLLC) slice categories.
-
-
-
-###Elastic O-RAN Slicing for Industrial Monitoring and Control: A Distributed Matching Game and Deep Reinforcement Learning Approach
-
-**Abstract**
-
-In this work, an elastic Open Radio Access Network (O-RAN) slicing framework is designed specifically for the Industrial Internet of Things (IIoT), addressing challenges like severe communication environments, varying network-slice resource demands, and real-time data updates crucial for industrial production. The primary objective is to minimize the cost of fresh information updates (Age of Information, AoI) from IIoT devices while considering energy consumption constraints and ensuring O-RAN slice isolation.
-
-The proposed solution involves two main components:
-1. **Intelligent O-RAN Framework**: Utilizes game theory and machine learning techniques to manage complexity. A two-sided distributed matching game at the O-RAN control layer captures IIoT channel characteristics and service priorities, forming preference lists for IIoT devices and Small Cell Base Stations (SBSs). This game feeds into an actor-critic model employing Deep Deterministic Policy Gradient (DDPG) in the O-RAN service management layer.
-   
-2. **Actor-Critic with DDPG**: This model optimizes resource allocation by dynamically adjusting network slice configurations based on time-varying slicing demands. It provides long-term policy-based guidance that reflects overall satisfaction levels of IIoT devices and SBSs with their assignments.
-
-Simulation results demonstrate significant performance improvements over baseline approaches, with the proposed solution serving an average of 50% more IIoT devices and achieving a 43.64% increase in service capability. This approach integrates Industrial IoT management, distributed computation strategies, O-RAN slicing principles, Age of Information considerations, game theory frameworks, and deep reinforcement learning techniques to enhance IIoT service efficiency and reliability.
-
-###Dynamic MAC Scheduling in O-RAN using Federated Deep Reinforcement Learning		
-**Abstract**
-we explore the use of Federated learning-based DRL (FDRL) for MAC scheduling 
-in RAN sharing in O-RAN.
-
-###	Policy-controlled QoS-based Resource Allocation xApp (QRA-xApp) from Rimedo Labs with ONF's SD-RAN RIC
-
-**Abstract**
- integrated a new xApp, the QoS-based Resource Allocation xApp (QRA-xApp), into the SD-RAN platform developed by the Open Networking Foundation (ONF). This integration enhances the capabilities of ONF's Near Real-Time RAN Intelligent Controller (Near RT-RIC) by enabling dynamic control over O-DU functionalities, particularly the scheduler. The QRA-xApp optimizes resource allocation across network slices, ensuring Service Level Agreements (SLAs) are met while adapting to varying user demands and network conditions. Leveraging the A1 interface for policy control, this integration marks another step in Rimedo Labs' contribution to the SD-RAN ecosystem, supporting efficient radio resource management in heterogeneous networks.
-
-
-###Energy Saving and Traffic Steering cooperate in O-RAN
-**Abstract**
-
-Energy Efficiency (EE) and Traffic Steering (TS) are pivotal aspects in the evolution of mobile networks, particularly in the context of 5G and beyond. Enhancing EE involves dynamically managing cell states based on traffic conditions, which necessitates efficient user offloading strategies. TS, defined by O-RAN ALLIANCE, plays a crucial role in distributing network traffic among cells to optimize load and Quality of Service (QoS) flows. This blog explores the integration possibilities and synergies between Energy Saving (ES) and TS mechanisms within O-RAN architectures.
-
-**Aim of the Blog**
-
-This blog aims to elucidate the collaborative potential between Energy Saving (ES) and Traffic Steering (TS) functionalities in O-RAN networks. It discusses two approaches for notifying TS-xApps about ES actions: leveraging the A1 interface and the E2SM-CCC model. By examining these methods, the blog highlights practical implementations and their implications for network efficiency and performance. The discussion underscores how these integrated strategies contribute to the broader goals of network optimization and sustainability in modern wireless ecosystems.
-
-###Hierarchical Traffic Management in O-RAN – A Vehicular Scenario
-
+### Efficient Service Allocation Scheduling Algorithms for 5G User Equipments in Slice-in-Slice Networks
 **Abstract:**
-Vehicular communication in 5G and future networks introduces significant challenges due to its dynamic spatial and temporal characteristics. This necessitates robust traffic management solutions within O-RAN architecture. This blog explores the deployment of Traffic Management rApp (TM-rApp) and Traffic Steering xApp (TS-xApp) in vehicular scenarios, leveraging Enrichment Information (EI) and real-time RAN statistics to optimize network performance.
+The paper presents advanced scheduling algorithms designed for efficient service allocation in 5G slice-in-slice network environments. By prioritizing user equipments based on real-time network conditions and service requirements, the proposed algorithms aim to enhance network resource utilization and QoS delivery. Simulation results indicate significant improvements in service latency and throughput.
 
-**Aim:**
-The blog aims to demonstrate how TM-rApp and TS-xApp contribute to hierarchical traffic management in O-RAN networks. It discusses their role in enhancing Quality of Service (QoS) for diverse vehicular services, including autonomous vehicle platoons and emergency response scenarios. Through simulation-based evaluations, the blog showcases the effectiveness of these applications in minimizing handovers, optimizing resource allocation, and ensuring reliable connectivity amidst dynamic traffic conditions.
+**[⬆ Back to Top](#table-of-contents)**
 
-This summary captures the core objectives and focus of the blog post, highlighting its exploration of advanced network management strategies tailored for vehicular communication within the O-RAN framework.
-
-###Traffic Management for V2X use cases in O-RAN
+### Open RAN LSTM Traffic Prediction and Slice Management using Deep Reinforcement Learning
 **Abstract:**
-Vehicular communication in 5G networks poses intricate challenges due to its dynamic spatial and temporal characteristics. This blog explores the deployment of Traffic Management rApp (TM-rApp) and Traffic Steering xApp (TS-xApp) within O-RAN architecture to address these challenges. It highlights the utilization of Enrichment Information (EI) and real-time RAN statistics to enhance network performance in scenarios such as car platoon management and emergency response.
+This research focuses on integrating LSTM-based traffic prediction models with deep reinforcement learning (DRL) for efficient slice management in Open RAN. By predicting traffic patterns and dynamically adjusting resource allocations, the proposed system enhances network performance and reduces SLA violations. Experimental results highlight the effectiveness of the approach in managing network slices under varying traffic conditions.
 
-**Aim:**
-This blog aims to illustrate the implementation and operational synergy of TM-rApp and TS-xApp in vehicular scenarios within O-RAN networks. It discusses their roles in enabling hierarchical traffic management through policy-based control, efficient use of EI for proactive network management, and the exposure of RAN statistics via the Y1 interface. The simulation-based evaluation demonstrates their effectiveness in minimizing handovers, optimizing resource allocation, and ensuring robust connectivity under varying traffic conditions. The findings underscore the significance of these applications in meeting diverse service requirements and enhancing Quality of Service (QoS) in dynamic network environments.
+**[⬆ Back to Top](#table-of-contents)**
 
-This summary encapsulates the core objectives and thematic focus of the blog post, emphasizing advancements in traffic management solutions tailored for vehicular communications within evolving O-RAN frameworks.
+### Slice-aware Open Radio Access Network Planning and Dimensioning
+**Abstract:**
+A slice-aware planning and dimensioning approach for Open RAN is proposed, aimed at optimizing resource allocation across multiple network slices. By considering slice-specific requirements and network constraints, the method enhances overall network efficiency and QoS. The paper provides detailed modeling and simulation results, demonstrating the benefits of the proposed approach.
 
+**[⬆ Back to Top](#table-of-contents)**
+
+### Intelligent QoS-aware Slice Resource Allocation with User Association Parameterization for Beyond 5G ORAN Based Architecture Using DRL
+**Abstract:**
+This paper addresses the challenge of resource allocation in beyond 5G O-RAN architectures by proposing a DRL-based method that intelligently manages slice resources while considering user association parameters. The approach ensures QoS adherence and optimizes resource usage, leading to improved network performance and user satisfaction. Experimental evaluations show significant enhancements over traditional methods.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Elastic O-RAN Slicing for Industrial Monitoring and Control: A Distributed Matching Game and Deep Reinforcement Learning Approach
+**Abstract:**
+The paper introduces an elastic O-RAN slicing framework designed for industrial monitoring and control applications. By combining a distributed matching game with deep reinforcement learning, the proposed method dynamically allocates resources to meet the stringent requirements of industrial IoT systems. Simulation results demonstrate the framework's ability to maintain low latency and high reliability.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Dynamic MAC Scheduling in O-RAN Using Federated Deep Reinforcement Learning
+**Abstract:**
+This research presents a novel approach to MAC scheduling in O-RAN using federated deep reinforcement learning (FDRL). By enabling distributed learning across multiple network nodes, the proposed method improves scheduling efficiency and adapts to changing network conditions. The paper includes detailed experimental results, highlighting the benefits of FDRL in terms of throughput and latency.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Policy-controlled QoS-based Resource Allocation xApp (QRA-xApp) from Rimedo Labs with ONF's SD-RAN RIC
+**Abstract:**
+Rimedo Labs presents the QRA-xApp, designed to provide policy-controlled QoS-based resource allocation in O-RAN environments. Leveraging the ONF's SD-RAN RIC, the xApp dynamically allocates resources based on QoS policies, ensuring SLA compliance and efficient network operation. The paper discusses the xApp's architecture, implementation, and performance in various scenarios.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Energy Saving and Traffic Steering Cooperate in O-RAN
+**Abstract:**
+This paper explores the synergy between energy-saving mechanisms and traffic steering strategies in O-RAN. By integrating energy-efficient algorithms with intelligent traffic steering, the proposed approach reduces energy consumption while maintaining network performance. The paper includes comprehensive evaluations, demonstrating the approach's effectiveness in various network conditions.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Hierarchical Traffic Management in O-RAN – A Vehicular Scenario
+**Abstract:**
+The paper introduces a hierarchical traffic management framework for O-RAN, specifically designed for vehicular scenarios. By leveraging hierarchical control and optimization techniques, the framework aims to enhance traffic management and QoS for connected vehicles. Simulation results show significant improvements in latency and throughput.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Traffic Management for V2X Use Cases in O-RAN
+**Abstract:**
+Focused on vehicle-to-everything (V2X) use cases, this paper presents traffic management strategies for O-RAN. By addressing the unique requirements of V2X communication, the proposed methods aim to improve network performance and reliability. The paper includes detailed analyses and simulation results, highlighting the benefits of the proposed strategies.
+
+**[⬆ Back to Top](#table-of-contents)**
